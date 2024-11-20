@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Limpa - A Tecnologia</title>
+    <link rel="stylesheet" href="css/global.css"> <!-- CSS Global -->
+    <link rel="stylesheet" href="css/tecnologia.css"> <!-- CSS Específico -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="js/script.js"></script>
+
+</head>
+<body>
+    <header class="navigation">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="problema.html">O Problema</a></li>
+            <li><a href="objetivos.html">Objetivos</a></li>
+            <li><a href="publico.html">Público-Alvo</a></li>
+            <li><a href="solucao.html">solução</a></li>
+        </ul>
+    </header>
+
+    <main class="technology-container">
+        <header>
+            <h1>A Tecnologia</h1>
+            <p>Descubra como utilizamos a tecnologia para monitorar o consumo de energia e reduzir custos.</p>
+        </header>
+
+        <section class="technology-section">
+            <h2>O que é nossa tecnologia?</h2>
+            <p>
+                Nossa solução utiliza algoritmos avançados para calcular o consumo energético de dispositivos
+                com base em suas potências, tempo de uso e frequência semanal. A partir disso, é possível
+                identificar o custo mensal de cada dispositivo, oferecendo maior controle e transparência.
+            </p>
+            <div class="technology-image">
+                <img src="imagens/Screenshot 2024-11-20 185059.png" alt="Monitoramento de consumo de energia">
+            </div>
+        </section>
+
+        <section class="code-highlight">
+            <h2>Como funciona?</h2>
+            <p>
+                Através de um sistema interativo, é possível cadastrar dispositivos, calcular o consumo energético,
+                editar informações e até gerar relatórios detalhados que ajudam a reduzir o desperdício de energia.
+            </p>
+            <pre>
+<code>
+def calcular_consumo():
+    resultados = []
+    custo_total_mensal = 0
+    for dispositivo in dispositivos:
+        consumo_semanal = (dispositivo["potencia"] / 1000) * dispositivo["tempo_diario"] * dispositivo["frequencia"]
+        consumo_mensal = consumo_semanal * 4  
+        custo_mensal = consumo_mensal * CUSTO_KWH
+        custo_total_mensal += custo_mensal
+        resultados.append({
+            "nome": dispositivo["nome"],
+            "consumo_semanal": consumo_semanal,
+            "consumo_mensal": consumo_mensal,
+            "custo_mensal": custo_mensal
+        })
+    return resultados, custo_total_mensal
+</code>
+            </pre>
+        </section>
+
+        <section class="benefits-section">
+            <h2>Por que usar nossa tecnologia?</h2>
+            <ul>
+                <li>Identificação de dispositivos que consomem mais energia.</li>
+                <li>Relatórios detalhados para tomada de decisão.</li>
+                <li>Redução do desperdício energético e custos mensais.</li>
+                <li>Integração com painéis solares para descontos na conta.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Energia Limpa. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

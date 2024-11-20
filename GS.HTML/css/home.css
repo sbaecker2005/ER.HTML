@@ -1,0 +1,289 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: #4A7C59;
+}
+
+p {
+    line-height: 1.6;
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Navegação */
+.navigation {
+    background-color: #4A7C59;
+    padding: 10px 20px;
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    margin: 0 15px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+    color: #C2F9BB;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../imagens/hero-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #C2F9BB;
+    color: #4A7C59;
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #A0D9A0;
+    transform: scale(1.05);
+}
+
+/* Formulário */
+form {
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: left;
+}
+
+form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #4A7C59;
+}
+
+form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #4A7C59;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background-color: #3a6349;
+    transform: scale(1.05);
+}
+
+/* Carrossel */
+.carousel-container {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel button {
+    background-color: #4A7C59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel button:hover {
+    background-color: #3a6349;
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    background-color: #4A7C59;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 30px;
+    background-color: #f4f4f4;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: left;
+}
+
+.hero-image img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Introdução */
+.intro-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro-content img {
+    max-width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+}
+
+/* Formulário */
+.form-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.form-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.form-text {
+    flex: 1;
+}
+
+form {
+    max-width: 400px;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Carrossel */
+.carousel-container {
+    text-align: center;
+    padding: 30px;
+    background-color: #FFFFFF;
+}
+
+.carousel-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel-buttons button {
+    background-color: #4A7C59;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.carousel-buttons button:hover {
+    background-color: #3a6349;
+    transform: scale(1.05);
+}
